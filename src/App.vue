@@ -21,9 +21,10 @@ const { t } = useI18n();
     </div>
     <div class="w-full md:w-auto flex flex-col items-center md:items-start">
       <h1 class="text-3xl font-semibold mb-2">Dorian GILBERT</h1>
-      <p class="text-lg mb-6 max-w-md text-center md:text-left">
-        {{ t("about.description") }}
-      </p>
+      <p
+        v-html="t('about.description')"
+        class="text-lg mb-6 max-w-md text-center md:text-left"
+      ></p>
       <a
         :href="`${base}GILBERT_Dorian_CV.pdf`"
         target="_blank"
