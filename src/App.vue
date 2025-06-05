@@ -28,6 +28,7 @@ const { t } = useI18n();
       <a
         :href="`${base}GILBERT_Dorian_CV.pdf`"
         target="_blank"
+        rel="noopener"
         class="w-full text-xl bg-white text-[#203864] px-6 py-3 rounded font-bold hover:bg-gray-200 transition flex items-center justify-center shadow-lg mb-4"
       >
         <img src="./assets/download-solid.svg" alt="CV" class="w-5 h-5 mr-3" />
@@ -48,6 +49,7 @@ const { t } = useI18n();
         <a
           href="https://www.linkedin.com/in/dorian-gilbert/"
           target="_blank"
+          rel="noopener noreferrer nofollow"
           class="flex-1 bg-white text-[#203864] px-4 py-2 rounded font-semibold hover:bg-gray-200 transition flex items-center justify-center"
         >
           <img
@@ -60,6 +62,7 @@ const { t } = useI18n();
         <a
           href="https://github.com/doriangilbert"
           target="_blank"
+          rel="noopener noreferrer nofollow"
           class="flex-1 bg-white text-[#203864] px-4 py-2 rounded font-semibold hover:bg-gray-200 transition flex items-center justify-center"
         >
           <img
