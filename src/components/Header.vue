@@ -5,19 +5,19 @@ const { locale } = useI18n();
 </script>
 
 <template>
-  <header class="w-full bg-[#1A2D4F] text-white py-4 font-poppins">
+  <header class="font-poppins w-full bg-[#1A2D4F] py-4 text-white">
     <div class="container mx-auto flex items-center justify-between px-4">
       <h1 class="text-2xl font-semibold">Dorian GILBERT</h1>
       <div class="flex gap-2">
         <button
-          class="px-2 py-1 rounded hover:bg-[#203864] transition"
+          class="rounded px-2 py-1 transition hover:bg-[#203864]"
           :class="{ 'bg-white text-[#1A2D4F]': locale === 'fr' }"
           @click="locale = 'fr'"
         >
           FR
         </button>
         <button
-          class="px-2 py-1 rounded hover:bg-[#203864] transition"
+          class="rounded px-2 py-1 transition hover:bg-[#203864]"
           :class="{ 'bg-white text-[#1A2D4F]': locale === 'en' }"
           @click="locale = 'en'"
         >

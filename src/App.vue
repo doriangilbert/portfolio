@@ -10,39 +10,39 @@ const { t } = useI18n();
 <template>
   <Header />
   <div
-    class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-[#203864] text-white font-poppins px-4 md:px-0"
+    class="font-poppins flex min-h-screen flex-col items-center justify-center bg-[#203864] px-4 text-white md:flex-row md:px-0"
   >
-    <div class="hidden md:block mb-8 md:mb-0 md:mr-10">
+    <div class="mb-8 hidden md:mr-10 md:mb-0 md:block">
       <img
         :src="`${base}portrait.jpg`"
         alt="Portrait"
-        class="w-64 h-64 rounded-full shadow-lg mx-auto"
+        class="mx-auto h-64 w-64 rounded-full shadow-lg"
       />
     </div>
-    <div class="w-full md:w-auto flex flex-col items-center md:items-start">
-      <h1 class="text-3xl font-semibold mb-2">Dorian GILBERT</h1>
+    <div class="flex w-full flex-col items-center md:w-auto md:items-start">
+      <h1 class="mb-2 text-3xl font-semibold">Dorian GILBERT</h1>
       <p
         v-html="t('about.description')"
-        class="text-lg mb-6 max-w-md text-center md:text-left"
+        class="mb-6 max-w-md text-center text-lg md:text-left"
       ></p>
       <a
         :href="`${base}GILBERT_Dorian_CV.pdf`"
         target="_blank"
         rel="noopener"
-        class="w-full text-xl bg-white text-[#203864] px-6 py-3 rounded font-bold hover:bg-gray-200 transition flex items-center justify-center shadow-lg mb-4"
+        class="mb-4 flex w-full items-center justify-center rounded bg-white px-6 py-3 text-xl font-bold text-[#203864] shadow-lg transition hover:bg-gray-200"
       >
-        <img src="./assets/download-solid.svg" alt="CV" class="w-5 h-5 mr-3" />
+        <img src="./assets/download-solid.svg" alt="CV" class="mr-3 h-5 w-5" />
         CV
       </a>
-      <div class="flex flex-col md:flex-row gap-y-3 md:gap-4 w-full">
+      <div class="flex w-full flex-col gap-y-3 md:flex-row md:gap-4">
         <a
           href="mailto:doriangilbert.pro@gmail.com"
-          class="flex-1 bg-white text-[#203864] px-4 py-2 rounded font-semibold hover:bg-gray-200 transition flex items-center justify-center"
+          class="flex flex-1 items-center justify-center rounded bg-white px-4 py-2 font-semibold text-[#203864] transition hover:bg-gray-200"
         >
           <img
             src="./assets/envelope-solid.svg"
             alt="Email"
-            class="w-4 h-4 mr-2"
+            class="mr-2 h-4 w-4"
           />
           Email
         </a>
@@ -50,12 +50,12 @@ const { t } = useI18n();
           href="https://www.linkedin.com/in/dorian-gilbert/"
           target="_blank"
           rel="noopener noreferrer nofollow"
-          class="flex-1 bg-white text-[#203864] px-4 py-2 rounded font-semibold hover:bg-gray-200 transition flex items-center justify-center"
+          class="flex flex-1 items-center justify-center rounded bg-white px-4 py-2 font-semibold text-[#203864] transition hover:bg-gray-200"
         >
           <img
             src="./assets/linkedin-brands.svg"
             alt="LinkedIn"
-            class="w-4 h-4 mr-2"
+            class="mr-2 h-4 w-4"
           />
           LinkedIn
         </a>
@@ -63,12 +63,12 @@ const { t } = useI18n();
           href="https://github.com/doriangilbert"
           target="_blank"
           rel="noopener noreferrer nofollow"
-          class="flex-1 bg-white text-[#203864] px-4 py-2 rounded font-semibold hover:bg-gray-200 transition flex items-center justify-center"
+          class="flex flex-1 items-center justify-center rounded bg-white px-4 py-2 font-semibold text-[#203864] transition hover:bg-gray-200"
         >
           <img
             src="./assets/github-brands.svg"
             alt="GitHub"
-            class="w-4 h-4 mr-2"
+            class="mr-2 h-4 w-4"
           />
           GitHub
         </a>
