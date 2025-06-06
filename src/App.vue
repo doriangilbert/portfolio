@@ -25,17 +25,20 @@ const { t } = useI18n();
       <h1 class="mb-2 text-center text-5xl font-semibold md:text-left">
         Dorian GILBERT
       </h1>
-      <p
-        v-html="t('about.description')"
-        class="mb-6 w-full max-w-xl text-center text-lg md:text-left"
-      ></p>
+      <p class="mb-6 w-full max-w-xl text-center text-lg md:text-left">
+        {{ t("about.description") }}
+      </p>
       <a
         :href="`${base}GILBERT_Dorian_CV.pdf`"
         target="_blank"
         rel="noopener"
         class="mb-4 flex w-full items-center justify-center rounded bg-white px-6 py-3 text-xl font-bold text-[#203864] shadow-lg transition hover:bg-gray-200"
       >
-        <img src="./assets/download-solid.svg" alt="CV" class="mr-3 h-5 w-5" />
+        <img
+          src="./assets/download-solid.svg"
+          alt="Download icon"
+          class="mr-3 h-5 w-5"
+        />
         CV
       </a>
       <div class="flex w-full flex-col gap-y-3 md:flex-row md:gap-4">
@@ -45,7 +48,7 @@ const { t } = useI18n();
         >
           <img
             src="./assets/envelope-solid.svg"
-            alt="Email"
+            alt="Email icon"
             class="mr-2 h-4 w-4"
           />
           doriangilbert.pro@gmail.com
@@ -56,7 +59,7 @@ const { t } = useI18n();
         >
           <img
             src="./assets/phone-solid.svg"
-            alt="Telephone"
+            alt="Telephone icon"
             class="mr-2 h-4 w-4"
           />
           +33 6 51 00 88 84
@@ -69,7 +72,7 @@ const { t } = useI18n();
         >
           <img
             src="./assets/linkedin-brands.svg"
-            alt="LinkedIn"
+            alt="LinkedIn icon"
             class="mr-2 h-4 w-4"
           />
           LinkedIn
@@ -82,7 +85,7 @@ const { t } = useI18n();
         >
           <img
             src="./assets/github-brands.svg"
-            alt="GitHub"
+            alt="GitHub icon"
             class="mr-2 h-4 w-4"
           />
           GitHub
