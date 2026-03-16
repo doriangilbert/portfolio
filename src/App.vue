@@ -14,7 +14,7 @@ const { t } = useI18n();
   >
     <div class="my-5 flex justify-center md:m-10">
       <img
-        :src="`${base}portrait.jpg`"
+        :src="`${base}portrait.jpeg`"
         alt="Portrait"
         class="mx-auto aspect-square h-40 w-40 rounded-full object-cover shadow-lg md:h-60 md:w-60 lg:h-80 lg:w-80"
       />
